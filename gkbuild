@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "r10-build"
+r10-build
+
+if [ $? -ne 0 ]
+then
+    echo "Build err, exit"
+    exit 1
+fi
+
+#echo "Remove /Users/gk/vshare/pack/repository/ver_zhaohang/lib"
+#rm -rf /Users/gk/vshare/pack/repository/ver_zhaohang/lib
+
+#echo "Copy libdexHelper.so"
+#cp -r /Users/gk/vshare/gitsrc/ApkWrapper/libs /Users/gk/vshare/pack/repository/ver_zhaohang/lib
+
+#echo "The end!"
